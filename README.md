@@ -1,16 +1,16 @@
 class: center, middle
 
-# Why does browser video need a relay?
+# An Introduction to WebRTC
 
-## WebRTC and TURN, in five minutes
+## Why browser media sometimes needs a relay
 
 JJ Salley<br>
 CSWG · November 5, 2026
 
 ???
-Hello. This is a short explanation of one surprising part of browser video:
-why two people who can both reach the internet may still need a third machine
-in the middle.
+Hello. This is a short introduction to WebRTC. One surprising part of browser
+video is why two people who can both reach the internet may still need a third
+machine in the middle.
 
 ---
 
@@ -137,6 +137,32 @@ does not replace good application design. It supplies the network fallback
 that browser media needs when direct connectivity is unavailable. The relay
 could be a managed service or an operator-run, prebuilt TURN service; this talk
 does not choose between those options.
+
+---
+
+## Why this matters to me
+
+```text
+ a project I am working on
+            │
+      video messaging
+            │
+ people on different networks
+            │
+   direct WebRTC if it works
+            │
+      TURN relay if needed
+```
+
+**Video messaging is not only a browser feature.<br>
+It also needs a reliable path between people.**
+
+???
+In one project I am working on, video messaging is part of what I want people
+to be able to do. This is why I needed to understand WebRTC beyond the visible
+camera and video controls. People may be on different networks. Their browsers
+may connect directly, but they may need a TURN relay when they cannot. That is
+why the relay is part of the project’s real implementation work.
 
 ---
 
