@@ -1,0 +1,73 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 500' width='960' height='500' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>
+<defs>
+<marker id='arr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#1f2937'/></marker>
+<marker id='arrb' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker>
+<marker id='arrr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker>
+<marker id='arrg' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker>
+<marker id='arra' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#d97706'/></marker>
+<marker id='arrm' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#6b7280'/></marker>
+<marker id='arrl' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#cbd5e1'/></marker>
+</defs>
+<rect x='77.5' y='197.0' width='105.0' height='66.0' rx='4' fill='white' stroke='#1f2937' stroke-width='2'/>
+<rect x='85.0' y='204.5' width='90.0' height='45.0' rx='2' fill='#2563eb' opacity='0.18'/>
+<rect x='65.5' y='263.0' width='129.0' height='9.0' rx='2' fill='#1f2937'/>
+<text x='130' y='305.0' font-size='25.5' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>you</text>
+<text x='130' y='322' font-size='15' fill='#6b7280' text-anchor='middle' font-weight='normal' font-style='normal'>camera + screen</text>
+<line x1='190' y1='230' x2='445' y2='42' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='34.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 52 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='58' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Sam</text>
+<text x='492' y='46' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Sam</text>
+<line x1='190' y1='230' x2='445' y2='92' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='84.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 102 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='108' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Ana</text>
+<text x='492' y='96' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Ana</text>
+<line x1='190' y1='230' x2='445' y2='142' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='134.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 152 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='158' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Lee</text>
+<text x='492' y='146' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Lee</text>
+<line x1='190' y1='230' x2='445' y2='192' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='184.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 202 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='208' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Kim</text>
+<text x='492' y='196' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Kim</text>
+<line x1='190' y1='230' x2='445' y2='242' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='234.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 252 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='258' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Raj</text>
+<text x='492' y='246' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Raj</text>
+<line x1='190' y1='230' x2='445' y2='292' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='284.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 302 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='308' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Jo</text>
+<text x='492' y='296' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Jo</text>
+<line x1='190' y1='230' x2='445' y2='342' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='334.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 352 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='358' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Max</text>
+<text x='492' y='346' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Max</text>
+<line x1='190' y1='230' x2='445' y2='392' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='384.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 402 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='408' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Eva</text>
+<text x='492' y='396' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Eva</text>
+<line x1='190' y1='230' x2='445' y2='442' stroke='#2563eb' stroke-width='2.5' marker-end='url(#arrb)'/>
+<circle cx='470' cy='434.6' r='5.4' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M458 452 a12 12 0 0 1 24 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='470' y='458' font-size='0' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Dev</text>
+<text x='492' y='446' font-size='15' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>Dev</text>
+<text x='330' y='475' font-size='15' fill='#2563eb' text-anchor='middle' font-weight='bold' font-style='normal'>9 separate copies, 9 separate encoders</text>
+<rect x='580' y='60' width='360' height='300' rx='10' fill='#f8fafc' stroke='#e5e7eb' stroke-width='2'/>
+<text x='600' y='105' font-size='17' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>9 × your camera</text>
+<text x='920' y='105' font-size='17' fill='#1f2937' text-anchor='end' font-weight='normal' font-style='normal'>≈ 10–13 Mbps up</text>
+<text x='600' y='153' font-size='17' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>9 × your screen</text>
+<text x='920' y='153' font-size='17' fill='#1f2937' text-anchor='end' font-weight='normal' font-style='normal'>≈ 20–30 Mbps up</text>
+<line x1='600' y1='181' x2='920' y2='181' stroke='#1f2937' stroke-width='1.5'/>
+<text x='600' y='211' font-size='17' fill='#dc2626' text-anchor='start' font-weight='bold' font-style='normal'>you, sending</text>
+<text x='920' y='211' font-size='17' fill='#dc2626' text-anchor='end' font-weight='bold' font-style='normal'>≈ 40 Mbps up</text>
+<text x='600' y='259' font-size='17' fill='#16a34a' text-anchor='start' font-weight='bold' font-style='normal'>your home internet</text>
+<text x='920' y='259' font-size='17' fill='#16a34a' text-anchor='end' font-weight='bold' font-style='normal'>≈ 10–20 Mbps up</text>
+<text x='760' y='335' font-size='14' fill='#6b7280' text-anchor='middle' font-weight='normal' font-style='italic'>…and all nine of them are doing the same thing</text>
+</svg>

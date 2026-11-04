@@ -1,0 +1,65 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 480' width='960' height='480' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>
+<defs>
+<marker id='arr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#1f2937'/></marker>
+<marker id='arrb' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker>
+<marker id='arrr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker>
+<marker id='arrg' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker>
+<marker id='arra' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#d97706'/></marker>
+<marker id='arrm' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#6b7280'/></marker>
+<marker id='arrl' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#cbd5e1'/></marker>
+</defs>
+<rect x='350' y='190' width='180' height='100' rx='8' fill='#fef3c7' stroke='#d97706' stroke-width='2'/>
+<text x='440.0' y='236.0' font-size='22' fill='#1f2937' text-anchor='middle' font-weight='bold' font-style='normal'>SFU</text>
+<text x='440.0' y='258.0' font-size='18' fill='#6b7280' text-anchor='middle' font-weight='normal' font-style='normal'>the mail room</text>
+<circle cx='440.0' cy='68.7' r='6.3' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<path d='M426.0 89.0 a14 14 0 0 1 28 0 z' fill='#dbeafe' stroke='#2563eb' stroke-width='2'/>
+<text x='440.0' y='42.0' font-size='15' fill='#2563eb' text-anchor='middle' font-weight='bold' font-style='normal'>you</text>
+<line x1='440.0' y1='99.0' x2='440.0' y2='184.0' stroke='#2563eb' stroke-width='3.5' marker-end='url(#arrb)'/>
+<circle cx='536.9845666282581' cy='100.21219592813368' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M522.9845666282581 120.51219592813368 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='559.320406215372' y='80.76955014188567' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Sam</text>
+<line x1='479.8538379140229' y1='185.1458980337503' x2='522.8777205732388' y2='125.92860379313242' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<circle cx='596.9243251887003' cy='182.71219592813367' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M582.9243251887003 203.01219592813368 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='633.0644728079162' y='182.26955014188567' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Ana</text>
+<line x1='535.706339097771' y1='208.90312537278874' x2='574.0989687976166' y2='196.42860379313242' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<circle cx='596.9243251887003' cy='284.6878040718663' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M582.9243251887003 304.9878040718663 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='633.0644728079162' y='307.7304498581143' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Lee</text>
+<line x1='535.706339097771' y1='271.09687462721126' x2='574.0989687976166' y2='283.5713962068676' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<circle cx='536.9845666282581' cy='367.1878040718663' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M522.9845666282581 387.4878040718663 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='559.320406215372' y='409.2304498581143' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Kim</text>
+<line x1='479.8538379140229' y1='294.8541019662497' x2='522.8777205732388' y2='354.0713962068676' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<circle cx='440.0' cy='398.7' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M426.0 419.0 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='440.0' y='448.0' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Raj</text>
+<line x1='440.0' y1='296.0' x2='440.0' y2='381.0' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<circle cx='343.01543337174195' cy='367.1878040718663' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M329.01543337174195 387.4878040718663 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='320.67959378462797' y='409.2304498581143' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Jo</text>
+<line x1='400.14616208597715' y1='294.8541019662497' x2='357.1222794267613' y2='354.0713962068676' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<circle cx='283.0756748112997' cy='284.6878040718663' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M269.0756748112997 304.9878040718663 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='246.93552719208384' y='307.73044985811435' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Max</text>
+<line x1='344.2936609022291' y1='271.09687462721126' x2='305.90103120238336' y2='283.5713962068676' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<circle cx='283.0756748112997' cy='182.7121959281337' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M269.0756748112997 203.0121959281337 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='246.9355271920838' y='182.2695501418857' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Eva</text>
+<line x1='344.2936609022291' y1='208.90312537278876' x2='305.90103120238336' y2='196.42860379313245' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<circle cx='343.0154333717419' cy='100.21219592813368' r='6.3' fill='white' stroke='#1f2937' stroke-width='2'/>
+<path d='M329.0154333717419 120.51219592813368 a14 14 0 0 1 28 0 z' fill='white' stroke='#1f2937' stroke-width='2'/>
+<text x='320.6795937846279' y='80.7695501418857' font-size='15' fill='#1f2937' text-anchor='middle' font-weight='normal' font-style='normal'>Dev</text>
+<line x1='400.1461620859771' y1='185.1458980337503' x2='357.1222794267612' y2='125.92860379313241' stroke='#1f2937' stroke-width='2' marker-end='url(#arr)'/>
+<text x='456' y='150' font-size='15' fill='#2563eb' text-anchor='start' font-weight='bold' font-style='normal'>you send ONE copy</text>
+<text x='700' y='80' font-size='15' fill='#6b7280' text-anchor='start' font-weight='normal' font-style='normal'>the server makes the copies</text>
+<text x='700' y='102' font-size='15' fill='#6b7280' text-anchor='start' font-weight='normal' font-style='normal'>and delivers them only to people</text>
+<text x='700' y='124' font-size='15' fill='#6b7280' text-anchor='start' font-weight='normal' font-style='normal'>who accepted, or are in the room</text>
+<rect x='680' y='300' width='260' height='130' rx='10' fill='#f8fafc' stroke='#e5e7eb' stroke-width='2'/>
+<text x='700' y='338' font-size='16' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>you, sending</text>
+<text x='920' y='338' font-size='16' fill='#16a34a' text-anchor='end' font-weight='bold' font-style='normal'>≈ 4 Mbps up</text>
+<text x='920' y='358' font-size='13' fill='#6b7280' text-anchor='end' font-weight='normal' font-style='normal'>(was 40)</text>
+<text x='700' y='398' font-size='16' fill='#1f2937' text-anchor='start' font-weight='normal' font-style='normal'>encoders running</text>
+<text x='920' y='398' font-size='16' fill='#16a34a' text-anchor='end' font-weight='bold' font-style='normal'>2</text>
+<text x='920' y='418' font-size='13' fill='#6b7280' text-anchor='end' font-weight='normal' font-style='normal'>(was 18)</text>
+</svg>

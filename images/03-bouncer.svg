@@ -1,0 +1,40 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 380' width='960' height='380' font-family='Helvetica Neue, Helvetica, Arial, sans-serif'>
+<defs>
+<marker id='arr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#1f2937'/></marker>
+<marker id='arrb' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker>
+<marker id='arrr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker>
+<marker id='arrg' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker>
+<marker id='arra' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#d97706'/></marker>
+<marker id='arrm' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#6b7280'/></marker>
+<marker id='arrl' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0 0L10 5L0 10z' fill='#cbd5e1'/></marker>
+</defs>
+<rect x='60' y='70' width='240' height='280' rx='10' fill='white' stroke='#1f2937' stroke-width='2.5'/>
+<text x='180.0' y='56' font-size='22' fill='#1f2937' text-anchor='middle' font-weight='bold' font-style='normal'>you</text>
+<rect x='145.0' y='118.0' width='70.0' height='44.0' rx='4' fill='white' stroke='#1f2937' stroke-width='2'/>
+<rect x='150.0' y='123.0' width='60.0' height='30.0' rx='2' fill='#2563eb' opacity='0.18'/>
+<rect x='137.0' y='162.0' width='86.0' height='6.0' rx='2' fill='#1f2937'/>
+<text x='180.0' y='190' font-size='13' fill='#6b7280' text-anchor='middle' font-weight='normal' font-style='normal'>home / office</text>
+<rect x='272' y='220' width='56' height='130' rx='6' fill='#1f2937'/>
+<text x='300' y='278' font-size='14' fill='white' text-anchor='middle' font-weight='bold' font-style='normal'>router</text>
+<text x='300' y='298' font-size='12' fill='white' text-anchor='middle' font-weight='normal' font-style='normal'>(the</text>
+<text x='300' y='314' font-size='12' fill='white' text-anchor='middle' font-weight='normal' font-style='normal'>bouncer)</text>
+<rect x='660' y='70' width='240' height='280' rx='10' fill='white' stroke='#1f2937' stroke-width='2.5'/>
+<text x='780.0' y='56' font-size='22' fill='#1f2937' text-anchor='middle' font-weight='bold' font-style='normal'>Sam</text>
+<rect x='745.0' y='118.0' width='70.0' height='44.0' rx='4' fill='white' stroke='#1f2937' stroke-width='2'/>
+<rect x='750.0' y='123.0' width='60.0' height='30.0' rx='2' fill='#2563eb' opacity='0.18'/>
+<rect x='737.0' y='162.0' width='86.0' height='6.0' rx='2' fill='#1f2937'/>
+<text x='780.0' y='190' font-size='13' fill='#6b7280' text-anchor='middle' font-weight='normal' font-style='normal'>home / office</text>
+<rect x='632' y='220' width='56' height='130' rx='6' fill='#1f2937'/>
+<text x='660' y='278' font-size='14' fill='white' text-anchor='middle' font-weight='bold' font-style='normal'>router</text>
+<text x='660' y='298' font-size='12' fill='white' text-anchor='middle' font-weight='normal' font-style='normal'>(the</text>
+<text x='660' y='314' font-size='12' fill='white' text-anchor='middle' font-weight='normal' font-style='normal'>bouncer)</text>
+<line x1='300' y1='140' x2='440' y2='140' stroke='#16a34a' stroke-width='3.5' marker-end='url(#arrg)'/>
+<text x='370' y='128' font-size='15' fill='#16a34a' text-anchor='middle' font-weight='normal' font-style='normal'>going out: fine</text>
+<line x1='660' y1='140' x2='520' y2='140' stroke='#16a34a' stroke-width='3.5' marker-end='url(#arrg)'/>
+<text x='590' y='128' font-size='15' fill='#16a34a' text-anchor='middle' font-weight='normal' font-style='normal'>going out: fine</text>
+<line x1='445' y1='290' x2='335' y2='290' stroke='#dc2626' stroke-width='3.5' marker-end='url(#arrr)'/>
+<text x='390' y='326' font-size='15' fill='#dc2626' text-anchor='middle' font-weight='bold' font-style='normal'>✕  nobody comes in</text>
+<line x1='515' y1='290' x2='625' y2='290' stroke='#dc2626' stroke-width='3.5' marker-end='url(#arrr)'/>
+<text x='570' y='326' font-size='15' fill='#dc2626' text-anchor='middle' font-weight='bold' font-style='normal'>✕  nobody comes in</text>
+<text x='480' y='222' font-size='18' fill='#6b7280' text-anchor='middle' font-weight='normal' font-style='italic'>the internet</text>
+</svg>
