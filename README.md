@@ -1,149 +1,192 @@
 class: center, middle
 
-# Workshop Title
+# Why does browser video need a relay?
 
-**Subtitle: A slide deck template powered by Remark.js and Go**
+## WebRTC and TURN, in five minutes
 
-Author: Your Name
-
-*CSWG Workshop June 10 2025*
-
-[http://ciwg.github.io/workshop-YYYY-MM-DD-template/](http://ciwg.github.io/workshop-YYYY-MM-DD-template/)
-
-For additional materials visit the repo on [Github](https://github.com/ciwg/workshop-YYYY-MM-DD-template/)
-
----
-
-## Outline
-
-1. Quick Start
-2. Setting up Github Pages
-3. How it works
-4. Code Example
-5. Table Example
-
----
-
-## Quick Start
-
-**Copy this template**
-1. Visit the [workshop template](https://github.com/ciwg/workshop-YYYY-MM-DD-template/), and click "Use this template". <br>
-![:img Template Button, 30%](https://docs.github.com/assets/cb-76823/mw-1440/images/help/repository/use-this-template-button.webp)
-2. Make sure **Owner** is set to "ciwg" - *This makes sure you still retain access to 'Github Pages' Settings later.*
-3. Name your repository following **'workshop-YYYY-MM-DD-workshop-name'** format.
-
-**Modify the content**
-1. Clone the repo to your local machine.
-3. Edit `README.md` to create the content of your workshop.
-4. In your terminal, run `make` to generate and host `index.html`
-5. Open http://localhost:8192 to view your slides.
-
----
-
-## How it Works
-
-.center[![:img How it works, 100%](images/How-it-works.svg)]
-
-**NOTE:** Sometimes the browser caches too aggressively & recent changes won't displayed. Use **`Ctrl+Shift+R`** (or `Cmd+Shift+R` on Mac) to complete a 'hard refresh' of your browser tab.
-
----
-
-## Setting up Github Pages
-
-1. Push to GitHub
-2. Go to Settings > Pages
-3. Select source: main branch, / (root)
-4. Your slides will be live at:
-'https://ciwg.github.io/your-workshop-name/'
-5. Update the URL on the cover page as needed.
-
-Optional: Click the Settings ⚙️ in the About section of the repo. Check ✅ 'Use your GitHub Pages website'
-
----
-
-## Introduction
-
-This template uses [remark](https://remarkjs.com/#1) and Go to build and serve slide presentation. Slides are written in Markdown using a couple 'formatting rules' and compiled with Go into a static HTML file.
-
---
-
-### Remark.js:
-- Use `---` to separate slides, `--` to increment a slide
-- Highly customizable with CSS and JavaScript
-- Supports speaker notes (press "P" to toggle in/out)
-- Configurations (e.g. scroll navigation) can be enabled or disabled
-
-Visit the [wiki](https://github.com/gnab/remark/wiki/Markdown) to understand more built-in formating options.
-
---
-
-### Go code:
-The Go code in this repo extends the basic functionality of Remark.js by automating the slide building process, incorporating a template file, and enabling live-reloading during presentating & development.
+JJ Salley<br>
+CSWG · November 5, 2026
 
 ???
-This is a speaker note. View speaker mode using "P" hotkey or insert #p to the url, for example: http://localhost:8192/#p5
+Hello. This is a short explanation of one surprising part of browser video:
+why two people who can both reach the internet may still need a third machine
+in the middle.
 
 ---
 
-## Code Example
+## The simple picture
 
-```go
-package main
-
-import "fmt"
-
-// a long function that causes the code block to need a scrollbar
-// to demonstrate that code blocks can be scrolled
-func longFunction() {
-    // do nothing for several lines
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-    fmt.Println("Hello, World!")
-}
-
-func main() {
-    fmt.Println("Hello, World!")
-}
+```text
+  your browser  ───────────────►  their browser
+       camera        video             screen
 ```
 
----
+**The hope:** the two browsers connect directly.
 
-## Table Example
-
-Insert a table to display data:
-
-| Feature       | Description                          |
-|---------------|--------------------------------------|
-| Markdown      | Simple syntax for writing slides     |
-| LaTeX         | Support for mathematical expressions |
-| Customization | CSS and JavaScript for styling      |
-
-You can modify table formatting by editing the CSS in the template file.
+???
+At first glance, a video call looks like one browser sending media directly to
+another. WebRTC is the browser technology that tries to make that happen. When
+the direct route works, it is efficient: the media does not need to pass
+through the application server.
 
 ---
 
-# Slide with Footnote
+## The real picture
 
-Some content that deserves a note.<sup>[1]</sup>
+```text
+  browser A                         browser B
+      │                                 │
+  home / office                     home / office
+  router + firewall                 router + firewall
+      │                                 │
+      └────────── public internet ──────┘
+```
 
-<div class="footnote">
-[1] This note stays near the bottom of the slide. <br>
-[2] You'll need to include a line break between each footnote.
-</div>
+**The problem:** each network decides what incoming traffic it will accept.
 
-Footnotes will be positioned at the bottom of the slide regardless if they are in-between two text blocks.<sup>[2]</sup>
+???
+Most people are behind a home router, office firewall, mobile carrier, or some
+combination. Those devices protect their networks by refusing unexpected
+incoming traffic. So being online does not automatically mean that one browser
+can reach another browser directly.
+
+---
+
+## WebRTC tries the direct routes first
+
+```text
+ browser A ── asks / answers ── browser B
+     │                              │
+     └────── tries possible paths ──┘
+                 │
+               STUN
+          “What route can I use?”
+```
+
+**STUN helps discover routes. It cannot guarantee a direct route exists.**
+
+???
+The application helps the browsers exchange connection information. Then WebRTC
+tries the routes it can discover. A STUN service can tell a browser how its
+network appears from outside. That often helps a direct connection work, but it
+cannot make every firewall or network policy allow one.
+
+---
+
+## TURN is the reliable fallback
+
+```text
+ browser A ──►  TURN relay  ──► browser B
+      ▲             ▲              ▲
+      └──────── both can reach it ─┘
+```
+
+**If direct media is blocked, both browsers send through the relay.**
+
+???
+TURN is that relay. Instead of requiring browser A to accept an incoming route
+from browser B, both browsers make outbound connections to one reachable TURN
+server. The server relays the encrypted media between them. It is not the
+first choice, but it is what makes a call reliable across the networks where a
+direct path fails.
+
+---
+
+## That means another implementation layer
+
+```text
+ meeting app       WebRTC in browsers        TURN service
+ ───────────       ──────────────────        ────────────
+ consent           capture + connection      public reachability
+ invitations       direct-route attempts     short-lived credentials
+ room rules        send / receive media      bandwidth + limits
+ signaling                                      monitoring + rotation
+```
+
+**The app is not the relay. The relay is not the app.**
+
+???
+This is the important point. A meeting application decides things such as
+consent, invitations, and room rules. Browsers capture and render media. A
+TURN service is separate infrastructure: it has to be reachable, authenticated,
+limited, monitored, and operated. Building media features therefore means more
+than writing the visible application.
+
+---
+
+## Why does a project need a TURN relay?
+
+```text
+ direct path works?  ── yes ──► use it
+        │
+        no
+        ▼
+ relay path works?   ── yes ──► the call still works
+        │
+        no
+        ▼
+ show a clear failure instead of pretending the call connected
+```
+
+**A TURN relay makes “works for people on different networks” a realistic goal.**
+
+???
+Without TURN, a demo can work beautifully on one local network and still fail
+for real people elsewhere. TURN does not make every problem disappear, and it
+does not replace good application design. It supplies the network fallback
+that browser media needs when direct connectivity is unavailable. The relay
+could be a managed service or an operator-run, prebuilt TURN service; this talk
+does not choose between those options.
 
 ---
 
 class: center, middle
 
-# Thank You!
+# Thank you.
+
+???
+Thank you. I am happy to take questions.
+
+---
+
+class: center, middle
+
+# Questions only — not part of the talk
+
+## How might a project obtain TURN?
+
+```text
+ managed TURN service       operator-run prebuilt TURN service
+ ────────────────────       ─────────────────────────────────
+ provider operates it       team operates a standard TURN package
+ usage / vendor tradeoffs   control / operations tradeoffs
+                 │                 │
+                 └──── both provide a standard relay endpoint ────┘
+```
+
+???
+Only use this slide if someone asks how the relay would be obtained. The
+five-minute talk does not select a provider or require a custom relay. Either
+path still needs authenticated, short-lived credentials and a responsible
+operator; the tradeoff is who carries the operational work.
+
+---
+
+class: center, middle
+
+# Questions only — not part of the talk
+
+## Does TURN read the call?
+
+```text
+ browser A  ══ encrypted media ══►  TURN  ══ encrypted media ══►  browser B
+```
+
+TURN relays packets. It is not the meeting application's authority for
+consent, invitations, or room membership.
+
+???
+TURN moves packets; it does not decide who should be in a meeting. The meeting
+application still owns those decisions. The exact privacy properties depend on
+the media and deployment design, so avoid making broader claims than that in a
+short talk.
