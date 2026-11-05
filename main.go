@@ -240,7 +240,7 @@ func main() {
 		wsHandler(hub, w, r)
 	})
 
-	log.Printf("Serving index.html and assets on %s\n", LISTEN_ADDR)
+	log.Printf("Serving index.html and assets at http://%s\n", LISTEN_ADDR)
 	if err := http.ListenAndServe(LISTEN_ADDR, nil); err != nil {
 		fmt.Printf("Error starting server -- run 'sudo netstat -tulpn | grep %d' to see conflicting processes\n", LISTEN_PORT)
 		log.Fatalf("Failed to start server: %v", err)

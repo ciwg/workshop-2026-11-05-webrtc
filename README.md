@@ -170,9 +170,20 @@ learning, and that's what's next.
 
 ---
 
-class: center, middle
+class: quick-reference
 
 # Thank you.
+
+## WebRTC quick reference
+
+| | |
+|---|---|
+| **NAT** | your router is a bouncer |
+| **signaling** | how browsers find each other and ask permission |
+| **STUN** | “read me my house number” |
+| **TURN** | “carry the letters, the door’s locked” |
+| **mesh** | everyone sends to everyone — dies at eight |
+| **SFU** | the mail room — send once, server delivers |
 
 ???
 Thank you. I am happy to take questions.
